@@ -1,0 +1,280 @@
+@import '~antd/dist/antd.css';
+.menuBar {
+    padding: 0 20px;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: auto;
+    box-shadow: 0 0 30px #f3f1f1;
+    background-color: #d35a14;
+}
+
+body {
+    background-color: #f7ecec;
+}
+
+.logo {
+    width: 150px;
+    float: left;
+}
+
+.logo h3 {
+    display: inline-block;
+    font-size: 20px;
+    padding: 19px 20px;
+    text-transform: capitalize;
+}
+
+.menuCon {
+    width: calc(100% - 150px);
+    float: left;
+    background-color: #d35a14;
+}
+
+.menuCon .ant-menu-item {
+    padding: 0px 5px;
+}
+
+.menuCon .ant-menu-submenu-title {
+    padding: 10px 20px;
+}
+
+.menuCon .ant-menu-item a,
+.menuCon .ant-menu-submenu-title a {
+    padding: 10px 15px;
+}
+
+.menuCon .ant-menu-horizontal {
+    border-bottom: none;
+}
+
+.menuCon .leftMenu {
+    float: left;
+}
+
+.menuCon .rightMenu {
+    float: right;
+}
+
+.barsMenu {
+    float: right;
+    height: 32px;
+    padding: 6px;
+    margin-top: 8px;
+    display: none;
+    background: none;
+}
+
+.barsBtn {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1890ff;
+    position: relative;
+}
+
+.barsBtn:after,
+.barsBtn:before {
+    content: attr(x);
+    width: 20px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 2px;
+    background: #1890ff;
+}
+
+.barsBtn:after {
+    top: auto;
+    bottom: -6px;
+}
+
+.ant-drawer-body {
+    padding: 0;
+}
+
+.barsMenu>span {
+    display: block;
+}
+
+.ant-drawer-body .ant-menu-horizontal>.ant-menu-item,
+.ant-drawer-body .ant-menu-horizontal>.ant-menu-submenu {
+    display: inline-block;
+    width: 100%;
+}
+
+.ant-menu {
+    background: none;
+}
+
+.ant-drawer-body .ant-menu-horizontal {
+    border-bottom: none;
+}
+
+.ant-drawer-body .ant-menu-horizontal>.ant-menu-item:hover {
+    border-bottom-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .barsMenu {
+        display: inline-block;
+    }
+    .leftMenu,
+    .rightMenu {
+        display: none;
+    }
+    .logo h3 {
+        margin-left: -20px;
+    }
+    .menuCon .ant-menu-item,
+    .menuCon .ant-menu-submenu-title {
+        padding: 1px 20px;
+    }
+    .logo h3 {
+        padding: 10px 20px;
+    }
+}
+
+.title {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.headerpagetext {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.titlechild {
+    color: #111;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 15px;
+}
+
+.titlechild2 {
+    color: #111;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.street:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 665px;
+    top: 83px;
+    left: 48px;
+    background: #ed2121;
+    box-shadow: -8px 13px #ed2121;
+}
+
+.windows .street:before {
+    left: 55px;
+    width: 659px;
+}
+
+.street:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 639px;
+    top: 109px;
+    left: 36px;
+    background: #ed2121;
+    box-shadow: -4px 13px #ed2121;
+}
+
+
+/*CUSTOM SEARCH BAR*/
+
+.searchbar {
+    width: 97%;
+    padding: 10px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+}
+
+.searchbox {
+    width: 20%;
+}
+
+
+/*CUSTOM BOARD BOX*/
+
+.board {
+    width: 200px;
+    height: 180px;
+    background-color: white;
+    margin: 20px;
+    display: inline;
+}
+
+.board:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.addboard {
+    width: 200px;
+    padding: 50px;
+    background: none;
+    border-style: dashed;
+    border-color: #111;
+    text-align: center;
+    margin: 20px;
+    display: inline;
+}
+
+.addboard:hover {
+    border-color: rgb(49, 144, 233);
+}
+
+.boardlist {
+    margin-left: 10px !important;
+}
+
+.boardheader {
+    width: 100%;
+    height: 10px;
+    background: red;
+    border-radius: 2px;
+}
+
+.boardname {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 2;
+    padding-bottom: 15px;
+}
+
+.boardcreatedate {
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.numcards {
+    margin-left: 35px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.boardbutton {
+    margin-left: 50px;
+}
