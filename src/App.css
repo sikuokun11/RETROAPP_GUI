@@ -113,6 +113,10 @@ body {
     border-bottom-color: transparent;
 }
 
+.ant-col {
+    min-width: 200px;
+}
+
 @media (max-width: 767px) {
     .barsMenu {
         display: inline-block;
@@ -169,33 +173,6 @@ body {
     margin: 15px;
     margin-left: 20px;
     margin-top: 20px;
-}
-
-.street:before {
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 665px;
-    top: 83px;
-    left: 48px;
-    background: #ed2121;
-    box-shadow: -8px 13px #ed2121;
-}
-
-.windows .street:before {
-    left: 55px;
-    width: 659px;
-}
-
-.street:after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 639px;
-    top: 109px;
-    left: 36px;
-    background: #ed2121;
-    box-shadow: -4px 13px #ed2121;
 }
 
 
